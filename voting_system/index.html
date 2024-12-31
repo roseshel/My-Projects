@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Poll System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="poll-container">
+        <h1>What is your favorite programming language?</h1>
+
+        <div class="poll-options">
+            <div class="option">
+                <input type="radio" id="javascript" name="poll" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="python" name="poll" value="Python">
+                <label for="python">Python</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="java" name="poll" value="Java">
+                <label for="java">Java</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="csharp" name="poll" value="C#">
+                <label for="csharp">C#</label>
+            </div>
+        </div>
+
+        <button id="submit-vote">Submit Vote</button>
+        
+        <h2>Poll Results:</h2>
+        <div class="results">
+            <div id="javascript-result" class="result-bar">
+                <span id="javascript-count" class="result-count">0</span> JavaScript
+            </div>
+            <div id="python-result" class="result-bar">
+                <span id="python-count" class="result-count">0</span> Python
+            </div>
+            <div id="java-result" class="result-bar">
+                <span id="java-count" class="result-count">0</span> Java
+            </div>
+            <div id="csharp-result" class="result-bar">
+                <span id="csharp-count" class="result-count">0</span> C#
+            </div>
+        </div>
+
+        <button id="reset-poll">Reset Poll</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
